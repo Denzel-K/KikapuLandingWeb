@@ -5,16 +5,17 @@ import kikapuLogo from "../../assets/kikapuLogo.png";
 
 export const Navbar = () => {
   const navRef = useRef();
-  const btnRef = useRef();
+  const headerRef = useRef();
   const [navActive, setNavActive] = useState(false);
 
   function handleNavDisplay (){
     setNavActive(!navActive);
     navRef.current.classList.toggle("activeNav");
+    headerRef.current.classList.toggle("activeHeader");
   }
 
   return (
-    <header>
+    <header ref={headerRef}>
       <div className="headLogo">
         <div className="logo">
           <div className="logoImage">
