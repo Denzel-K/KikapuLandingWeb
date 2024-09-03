@@ -1,0 +1,194 @@
+.footerContainer {
+	bottom: 0;
+	padding: 1.5rem 5rem 3rem 5rem;
+	background-color: $mainColor;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: fit-content;
+
+	@media(max-width: 1040px){
+		padding: 2rem 1rem;
+	}
+
+	@media(max-width: 600px){
+		padding: 2rem .65rem;
+	}
+}
+
+.footerFlex{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+
+	@media (max-width: 600px) {
+		flex-direction: column;
+	}
+}
+
+.footerLogo {
+	font-size: 32px;
+	font-weight: 700;
+	color: $lightBg;
+
+	@media(max-width: 780px){
+		font-size: 24px;
+	}
+}
+
+.footerContact {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+	@media(max-width: 600px){
+		margin-top: 1.5rem;
+	}
+
+	.topInfo {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		a {
+			text-align: center;
+			color: $secondaryColor;
+			text-decoration: none;
+			font-size: 1.2rem;
+			font-weight: 600;
+
+			&:hover{
+				color: lighten($secondaryColor, 25%);
+			}
+
+			@media(max-width: 1040px){
+				font-size: 1rem;
+			}
+			@media(max-width: 780px){
+				font-size: .95rem;
+			}
+		}
+	}
+
+	.pipe {
+		width: 1.85px;
+		background-color: lighten($secondaryColor, 20%);
+		margin: 0 .75rem;
+		height: 1.5rem;
+
+		@media(max-width: 780px){
+			height: 1rem;
+		}
+	}
+}
+
+.FooterSocials {
+	display: flex;
+	flex-direction: row;
+	gap: 2rem;
+
+	.f_link{
+		font-size: 24px;
+		color: $secondaryColor;
+		cursor: pointer;
+		transition: .3s ease;
+		
+		@media(max-width: 780px){
+			font-size: 18px;
+		}
+
+		&:hover{
+			color: lighten($secondaryColor, 25%);
+			transform: translateY(-6px)
+		}
+	}
+
+	@media(max-width: 600px){
+		margin-top: 1rem;
+	}
+}
+
+.partnerBox{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	//border: 2px solid lighten($mainColor, 20%);
+	box-shadow: 0 0 6px 2px lighten($mainColor, 30%);
+	padding: 1.25rem 1rem;
+	border-radius: 10px;
+	background-color: lighten($mainColor, 5%);
+	margin-top: 1.5rem;
+
+	& > div:nth-child(1){
+		font-size: 18px;
+		font-weight: 600;
+		color: lighten($mainColor, 70%);
+		border-bottom: 2px solid lighten($mainColor, 10%);
+		padding-bottom: 4px;
+		text-align: center;
+		width: 100%;
+
+		@media(max-width: 780px){
+			font-size: 16px;
+		}
+		@media(max-width: 330px){
+			font-size: 14px;
+		}
+	}
+
+	& > div:nth-child(2){
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+		margin-top: 6px;
+
+		img {
+			width: 32px;
+			height: 32px;
+			border-radius: 50%;
+
+			@media(max-width: 780px){
+				width: 20px;
+				height: 20px;
+			}
+			@media(max-width: 330px){
+				width: 18px;
+				height: 18px;
+			}
+		}
+		.partnerName{
+			margin-left: .65rem;
+			color: $lightBg;
+			font-size: 16px;
+
+			@media(max-width: 780px){
+				font-size: 14px;
+			}
+			@media(max-width: 330px){
+				font-size: 12px;
+			}
+		}
+	}
+}
+
+.copyright {
+	text-align: center;
+	color: lighten($mainColor, 70%);
+	margin-top: 2rem;
+	font-size: 18px; 
+	font-weight:600;
+
+	@media(max-width: 780px){
+		font-size: 16px;
+	}
+
+	@media(max-width: 600px){
+		margin-top: 1.5rem;
+	}
+}

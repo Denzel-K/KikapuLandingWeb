@@ -1,0 +1,22 @@
+// variables
+@import "./styles/variables.scss";
+
+// components
+@import "./components/Navbar/navbar.scss";
+@import "./components/Footer/footer.scss";
+
+// pages
+@import "./pages/Home/home.scss";
+@import "./pages/Target/target.scss";
+@import "./pages/Features/features.scss";
+@import "./pages/CheckApp/checkapp.scss";
+@import "./pages/whyUs/WhyUs.scss";
+@import "./pages/Team/team.scss";
+@import "./pages/partners/partners.scss";
+@import "./pages/ContactUs/contactUs.scss";
+@import "./pages/Faqs/faqs.scss";
+
+.App {
+	overflow-x: hidden;
+	font-family: 'Roboto', sans-serif;
+}

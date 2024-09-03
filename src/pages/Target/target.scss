@@ -1,0 +1,181 @@
+.targetArticle{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 480px;
+
+	@media(max-width: 780px){
+		//min-height: 100vh;
+		height: 880px;
+	}
+	@media(max-width: 600px){
+		height: 860px;
+	}
+}
+.whyBg{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	
+	img{
+		width: 100%;
+		opacity: .1;
+
+		@media(max-width: 780px){
+			height: 100%;
+			width: auto;
+		}
+	}
+}
+
+.TargetsContainer {
+	position: absolute;
+	top: 0;
+	// background-image: url(../../assets/foodPattern.jpg);
+	// background-position: center;
+	// background-repeat: no-repeat;
+	// background-size: cover;
+	//background-color: hsl(168, 56%, 98%, .35);
+	//background-color: $darkSpringGreen;
+	//background-image: linear-gradient(to top, #29c276, #37ca8a, #46d19e, #58d8af, #6bdfc0, #7de4cd, #90e9d8, #a3ede2, #b8f2eb, #cdf6f3, #e2fbfa, #f7ffff);
+	text-align: center;
+	width: 100%;
+	height: 100%;
+	padding: 2.5rem 5rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	@media(max-width: 1040px){
+		padding: 2rem 1rem;
+	}
+}
+
+.targetHeading {
+	font-size: 1.8rem;
+	font-weight: 600;
+	font-family: 'Kanit', sans-serif;
+	color: $mainColor;
+	// background-color: $lightBg;
+	// padding: .5rem 1rem;
+	// border-radius: 4px;
+	
+	@media(max-width: 780px){
+		font-size: 1.7rem;
+	}
+	@media(max-width: 600px){
+		font-size: 1.5rem;
+	}
+
+	&:after {
+		content: "";
+		display: block;
+		width: 25%;
+		height: 2.5px;
+		background-color: $mainColor;
+		opacity: .8;
+		margin: .35rem auto;
+
+		@media(max-width: 600px){
+			width: 25%;
+		}
+		@media(max-width: 330px){
+			width: 30%;
+		}
+	}
+}
+
+.targetRow {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 2rem;
+	margin-top: 3rem;
+
+	@media(max-width: 780px){
+		flex-direction: column;
+		margin-top: 2rem;
+		gap: 1rem;
+	}
+}
+
+.target-card {
+	width: 30%;
+	padding: 1.5rem 1rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+	border-radius: 10px;
+	background-color: rgb(240, 245, 245);
+	//background-color: lighten($mainColor, 7%);
+	height: 250px;
+	box-shadow: 0 0 6px 4px rgb(196, 189, 178);
+	transition: 0.2s ease-in-out;
+
+	&:hover{
+		cursor: pointer;
+		box-shadow: 0 0 8px 2px lighten($mainColor, 20%);
+
+		.targetIcon {
+			scale: 1.15;
+		}
+	}
+
+	@media(max-width: 780px){
+		width: 100%;
+		height: auto;
+	}
+	.targetIcon {
+		width: 120px;
+		transition: 0.3s ease-out;
+	
+		@media(max-width: 1040px){
+			width: 100px;
+		}
+	
+		@media(max-width: 600px){
+			width: 90px;
+		}
+	}
+	.targetTitle {
+		text-shadow: none;
+		font-size: 22px;
+		font-weight: 900;
+		margin-top: 1rem;
+		padding: 0;
+		//color: $aquaMarine;
+		color: $mainColor;
+	
+		@media(max-width: 780px){
+			font-size: 22px;
+		}
+	
+		@media(max-width: 600px){
+			font-size: 16px;
+		}
+	}
+	.targetDesc{
+		font-size: 16px;
+		opacity: .75;
+		margin-top: 4px;
+		max-width: 500px;
+		font-weight: 600;
+		//color: $lightBg;
+		color: $mainColor;
+	
+		@media(max-width: 1040px){
+			font-size: 16px;
+		}
+	
+		@media(max-width: 780px){
+			font-size: 18px;
+		}
+	
+		@media(max-width: 600px){
+			font-size: 14px;
+		}
+	}
+}
