@@ -142,7 +142,7 @@ export const WhyUs = () => {
       </div> */}
 
       <div className="reasons_container">
-        <div className="customerCont f_box">
+        <div className="customerCont f_box" data-aos='fade-right'>
           <div className="featureHead">
             <span>Customers</span>
             <img src={images.customers} alt="customers" className="cusImg" />
@@ -158,7 +158,7 @@ export const WhyUs = () => {
           </div>
         </div>
 
-        <div className="resCont f_box">
+        <div className="resCont f_box" data-aos='fade-left'>
           <div className="featureHead">
             <span>Restaurants</span>
             <img src={images.restHead} alt="restaurant" />

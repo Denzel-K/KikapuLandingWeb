@@ -44,7 +44,7 @@ export const Target = () => {
 
 				<div className='targetRow'>
 					{targetList.map((item, id) => (
-						<div key={id} className='target-card' >
+						<div key={id} className='target-card' data-aos='zoom-in'>
 							<div>
 								<img src={item.icon} alt='Icon' className='targetIcon' />
 							</div>

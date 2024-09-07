@@ -1,3 +1,9 @@
+//intro
+import resImg from "../assets/restaurant1.jpeg";
+import resImg2 from "../assets/restaurant2.jpeg";
+import resImg3 from "../assets/restaurant3.jpeg";
+import resIll from "../assets/resIll.png";
+
 //Who is KikapuApp for?
 import foodPattern from "../assets/foodPattern.jpg";
 import people from "../assets/icons/people.svg";
@@ -23,6 +29,10 @@ import customers from "../assets/icons/customerEating.svg";
 import restHead from "../assets/icons/restaurantPost.svg";
 
 export default {
+  resImg,
+  resImg2,
+  resImg3,
+  resIll,
   foodPattern,
   people,
   restaurant,

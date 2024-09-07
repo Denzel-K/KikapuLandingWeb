@@ -4,11 +4,10 @@ header {
   align-items: center;
   padding: 1rem 5rem .65rem 5rem;
   width: 100%;
-  background-color: $mainColor;
+  //background-color: $mainColor;
+  //background-color: rgb(250, 253, 252);
   z-index: 100;
   color: $whiteText;
-  position: fixed;
-  margin: auto;
 
   @media(max-width: 1040px){
     padding: 1rem 1rem .65rem 1rem;
@@ -42,22 +41,22 @@ header {
       .logoName {
         //text-shadow: 1px 1px 2px $secondaryColor;
         margin-left: .8rem;
-        color: rgb(61, 236, 128);
-        font-size: 2rem;
+        color: rgb(36, 225, 109);
+        font-size: 1.45rem;
   
         @media(max-width: 780px){
-          font-size: 1.5rem;
+          font-size: 1.25rem;
           margin-left: .55rem;
         }
         @media(max-width: 600px){
-          font-size: 1.35rem;
+          font-size: 1.15rem;
         }
       }
       .logoImage{
-        width: 36px;
+        width: 30px;
 
         @media(max-width: 780px){
-          width: 28px;
+          width: 26px;
         }
         @media(max-width: 600px){
           width: 24px;
@@ -111,10 +110,12 @@ header {
         margin: 0 14px 0 0;
         transition: all 0.3s 0.2s;
         border-radius: 5px;
+        //color: $mainColor;
         color: $whiteText;
         text-decoration: none;
         transition: 0.25s ease;
         font-weight: 600;
+        font-size: 14px;
   
         @media(max-width: 1040px){
           margin: 0 .75rem 0 0;
@@ -193,4 +194,6 @@ header {
 
 .activeHeader{
   background-image: linear-gradient(to bottom, #11273f, #142c46, #18314d, #1b3755, #1f3c5c);
+  // position: fixed;
+  // margin: auto;
 }
