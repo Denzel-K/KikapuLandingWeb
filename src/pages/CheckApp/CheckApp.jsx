@@ -55,7 +55,7 @@ export const CheckApp = () => {
             <span>Add to Kikapu</span>
           </div>
           <div className="f_desc_par">
-            Dive into a world of culinary delights by exploring an extensive selection of restaurants, cuisines, and menu items.
+            Easily add dishes to your cart with a simple click. This feature lets you build your meal selection and review it before ordering, ensuring you get everything you want.
           </div>
         </div>
       </section>
@@ -73,7 +73,7 @@ export const CheckApp = () => {
             <span>Confirm your order</span>
           </div>
           <div className="f_desc_par">
-            Dive into a world of culinary delights by exploring an extensive selection of restaurants, cuisines, and menu items.
+            Finalize your meal with just a few taps. Review your selections, choose your payment method, and place your order quickly and securely.
           </div>
         </div>
       </section>
@@ -90,7 +90,7 @@ export const CheckApp = () => {
             <span>View order history</span>
           </div>
           <div className="f_desc_par">
-            Dive into a world of culinary delights by exploring an extensive selection of restaurants, cuisines, and menu items.
+            Access a summary of all your past orders and payments. This feature helps you keep track of your dining history and manage any adjustments or reorders.
           </div>
         </div>
       </section>
