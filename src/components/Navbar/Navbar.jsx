@@ -40,9 +40,9 @@ export const Navbar = () => {
       <nav ref={navRef}>
         <div className="bookmarks">
           <a hrefLang="#">Home</a>
-          <a href={"#about"}>Features</a>
+          <a href={"#checkApp"}>Features</a>
           {/* <a href={"#features"}>Features</a> */}
-          <a href={"#team"}>Team</a>
+          <a href={"#about"}>Why us?</a>
           <a href={"#footer"}>Contact</a>
         </div>
 

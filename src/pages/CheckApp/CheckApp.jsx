@@ -3,7 +3,7 @@ import { gallery } from "../../constants";
 
 export const CheckApp = () => {
   return (
-    <div className="checkAppContainer">
+    <div className="checkAppContainer" id="checkApp">
       <div className="everyoneBox">
         <div className="everyoneTitle secTitle">
           <span>Kikapu</span> for Everyone
