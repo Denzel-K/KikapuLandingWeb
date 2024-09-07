@@ -32,7 +32,8 @@
   // background-color: hsla(0, 0%, 0%, 0.7);
   //backdrop-filter: blur(2px);
   //background-color: $mainColor;
-  background-image: linear-gradient(to bottom, #11273f, #4d556b, #878a99, #c2c2cb, #ffffff);
+  //background-image: linear-gradient(to bottom, #11273f, #4d556b, #878a99, #c2c2cb, #ffffff);
+  background-image: linear-gradient(to bottom, #11273f, #37465e, #5b697e, #828da0, #aab3c3, #bfc6d4, #d5d9e5, #eaedf7, #f0f1f9, #f5f6fb, #fafafd, #ffffff);
 
   //background-color: rgb(250, 253, 252);
   display: flex;
@@ -291,10 +292,11 @@
     }
 
     .title{
-      background-image: linear-gradient(to left bottom, #2e3439, #24292d, #1b1f22, #111418, #01050a);
+      background-image: linear-gradient(to right top, #181e26, #1c2429, #22292c, #292e2f, #313333);
+      //background-image: linear-gradient(to left bottom, #2e3439, #24292d, #1b1f22, #111418, #01050a);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      font-weight: 900;
+      font-weight: 700;
       font-size: 3rem;
       font-family: 'Open Sans', sans-serif;
 
@@ -315,9 +317,11 @@
     .desc{
       color: rgb(30, 32, 30);
       opacity: .85;
-      font-size: 1.05rem;
+      font-size: 1.15rem;
       margin-top: .4rem;
-      font-weight: 600;
+      line-height: 1.35rem;
+      word-spacing: .25rem;
+      //font-weight: 600;
   
       @media(max-width: 1040px){
         font-size: 1rem;

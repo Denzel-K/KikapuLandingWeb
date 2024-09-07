@@ -28,6 +28,18 @@ import msStartup from "../assets/msRocket.png";
 import customers from "../assets/icons/customerEating.svg";
 import restHead from "../assets/icons/restaurantPost.svg";
 
+//appFeatures
+import dashboard from '../assets/appFeatures/dashboard.jpeg';
+import cart from '../assets/appFeatures/cart.jpeg';
+import orderDraft from '../assets/appFeatures/orderDraft.jpeg';
+import history from '../assets/appFeatures/history.jpeg';
+
+//appFeature svg's
+import dashSVG from '../assets/icons/dashboard.svg';
+import cartSVG from '../assets/icons/cart.svg';
+import draftSVG from '../assets/icons/draft.svg';
+import historySVG from '../assets/icons/history.svg';
+
 export default {
   resImg,
   resImg2,
@@ -46,5 +58,13 @@ export default {
   paymentOptions,
   msStartup,
   customers,
-  restHead
+  restHead,
+  dashboard,
+  cart,
+  orderDraft,
+  history,
+  dashSVG,
+  cartSVG,
+  draftSVG,
+  historySVG
 }

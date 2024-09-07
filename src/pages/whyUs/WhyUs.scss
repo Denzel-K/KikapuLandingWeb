@@ -291,20 +291,23 @@
 				}
 				.f_desc{
 					font-size: 1rem;
-					font-weight: 500;
+					//font-weight: 500;
 					color: $lightBg;
 					opacity: .8;
-					margin-top: 12px;
+					margin-top: 1rem;
+					line-height: 1.25rem;
+					// word-spacing: .15rem;
+					// letter-spacing: 1px;
 
 					@media(max-width: 1040px){
-						font-size: .95rem;
-					}
-					@media(max-width: 780px){
 						font-size: .9rem;
 					}
-					@media(max-width: 600px){
+					@media(max-width: 780px){
 						font-size: .85rem;
-						margin-top: 8px;
+					}
+					@media(max-width: 600px){
+						font-size: .8rem;
+						margin-top: 12px;
 					}
 				}
 			}
