@@ -1,6 +1,5 @@
 .checkAppContainer{
 	width: 100%;
-	//padding: 2.5rem 5rem;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -113,13 +112,22 @@
 			margin-top: 1.5rem;
 	
 			.image-item {
-				height: 180px;
-				width: 180px;
-				overflow: hidden;
+				height: 200px;
+				width: 200px;
 				border-radius: 12px;
 				flex-shrink: 0;
 				transition: .3s ease;
 				box-shadow: 2px 4px 6px 2px rgb(144, 146, 149);
+				overflow: hidden;
+
+				@media(max-width: 1040px){
+					height: 180px;
+					width: 180px;
+				}
+
+				img{
+					width: 100%;
+				}
 
 				&:hover{
 					transform: translateY(-12px);
@@ -127,12 +135,13 @@
 			}
 
 			&::-webkit-scrollbar {
-				width: 4px;
+				width: 2px;
 			}
 			
 			&::-webkit-scrollbar-thumb {
-				background-color: rgba(230, 221, 221, 0.3);
+				background-color: rgba(172, 212, 195, 0.3);
 				border-radius: 10px;
+				width: 2px;
 			}
 		}
 	}
@@ -271,8 +280,14 @@
 		}
 	}
 
+	.appFeature:nth-child(3){
+		background-image: linear-gradient(to bottom, #ffffff, #fdfdff, #f9fbff, #f5f9ff, #f0f8ff);
+	}
+
+	.appFeature:nth-child(odd){
+		background-color: #f0f8ff;
+	}
 	.appFeature:nth-child(even){
-		background-color: aliceblue;
 		flex-direction: row-reverse;
 
 		@media(max-width: 600px){

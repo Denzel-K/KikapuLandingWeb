@@ -1,7 +1,13 @@
 import { images } from "../../constants";
 import { gallery } from "../../constants";
+import { useEffect } from "react";
+import AOS from "aos";
 
 export const CheckApp = () => {
+  useEffect(() => {
+		AOS.init({ duration: 1000 });
+	}, []);
+
   return (
     <div className="checkAppContainer" id="checkApp">
       <div className="everyoneBox">
@@ -11,7 +17,9 @@ export const CheckApp = () => {
 
         <div className="imageGallery">
           {gallery.map((image, index) => (
-            <img key={index} src={image} alt={`type-${index + 1}`} className="image-item" />
+            <div className="image-item" >
+              <img key={index} src={image} alt={`type-${index + 1}`}/>
+            </div>          
           ))}
         </div>
       </div>
@@ -25,7 +33,7 @@ export const CheckApp = () => {
         </p>
       </div>
 
-      <section className="appFeature">
+      <section className="appFeature" data-aos='fade-up'>
         <div className="featureShot">
           <img src={images.dashboard} alt="dashboard" />
         </div>
@@ -43,7 +51,7 @@ export const CheckApp = () => {
         </div>
       </section>
 
-      <section className="appFeature">
+      <section className="appFeature" data-aos='fade-up'>
         <div className="featureShot">
           <img src={images.cart} alt="dashboard" />
         </div>
@@ -60,7 +68,7 @@ export const CheckApp = () => {
         </div>
       </section>
 
-      <section className="appFeature">
+      <section className="appFeature" data-aos='fade-up'>
         <div className="featureShot">
           <img src={images.orderDraft} alt="dashboard" />
         </div>
@@ -78,7 +86,7 @@ export const CheckApp = () => {
         </div>
       </section>
 
-      <section className="appFeature">
+      <section className="appFeature" data-aos='fade-up'>
         <div className="featureShot">
           <img src={images.history} alt="history" />
         </div>

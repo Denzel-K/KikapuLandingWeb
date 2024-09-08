@@ -40,6 +40,14 @@ import cartSVG from '../assets/icons/cart.svg';
 import draftSVG from '../assets/icons/draft.svg';
 import historySVG from '../assets/icons/history.svg';
 
+//tryOut
+import tryOut from '../assets/tryOut.png';
+import android from '../assets/icons/android.svg';
+import ios from '../assets/icons/ios.svg';
+import playStore from '../assets/icons/playStore.svg';
+import appStore from '../assets/icons/appStore.svg';
+import download from '../assets/icons/download.svg';
+
 export default {
   resImg,
   resImg2,
@@ -66,5 +74,11 @@ export default {
   dashSVG,
   cartSVG,
   draftSVG,
-  historySVG
+  historySVG,
+  tryOut,
+  android,
+  ios,
+  playStore,
+  appStore,
+  download
 }
