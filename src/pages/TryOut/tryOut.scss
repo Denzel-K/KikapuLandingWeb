@@ -71,15 +71,15 @@
 			padding: 1.5rem 1.2rem;
 			border-radius: 10px;
 			background-color: lighten($mainColor, 15%);
-			box-shadow: 2px 2px 4px 2px rgb(28, 109, 90);
-			transition: .3s ease;
+			box-shadow: 2px 2px 4px 2px rgb(10, 46, 54);
+			transition: .2s ease;
 
 			@media(max-width: 380px){
 				padding: 1.5rem .8rem;
 			}
 
 			&:hover{
-				box-shadow: 2px 2px 4px 2px rgb(5, 64, 49);
+				box-shadow: 2px 2px 4px 2px rgb(5, 35, 64);
 				transform: translateY(-6px);
 			}
 
@@ -113,6 +113,7 @@
 				width: 100%;
 				border-radius: 10px;
 				margin-top: 2rem;
+				//background-color: lighten($darkSpringGreen, 2.5%);
 				background-color: lighten($mainColor, 35%);
 				border: none;
 				padding: .35rem 1rem;
@@ -124,7 +125,7 @@
 
 				&:hover{
 					cursor: pointer;
-					background-color: lighten($mainColor, 30%);
+					background-color: lighten($mainColor, 40%);
 				}
 
 				& > span:nth-child(1){
