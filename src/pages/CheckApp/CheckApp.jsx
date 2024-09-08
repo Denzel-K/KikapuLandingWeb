@@ -17,8 +17,8 @@ export const CheckApp = () => {
 
         <div className="imageGallery">
           {gallery.map((image, index) => (
-            <div className="image-item" >
-              <img key={index} src={image} alt={`type-${index + 1}`}/>
+            <div className="image-item" key={index}>
+              <img src={image} alt={`type-${index + 1}`}/>
             </div>          
           ))}
         </div>

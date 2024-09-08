@@ -53,8 +53,8 @@
 			margin: .5rem 0 3rem 0;
 			font-family: 'Open Sans', sans-serif;
 			line-height: 1.25rem;
-			letter-spacing: 1px;
-			word-spacing: .25rem;		
+			letter-spacing: .5px;
+			word-spacing: .15rem;		
 			font-weight: 500;
 
 			@media(max-width: 1040px){
@@ -213,6 +213,7 @@
 			flex-direction: column;
 			align-items: flex-start;
 			justify-content: center;
+			font-family: 'Open Sans', sans-serif;
 
 			@media(max-width: 600px){
 				align-items: center;
@@ -255,13 +256,13 @@
 			}
 
 			.f_desc_par{
-				font-size: 18px;
+				font-size: 16px;
 				margin-top: 1.25rem;
 				opacity: .85;
-				line-height: 1.65rem;
-				letter-spacing: 1px;
-				word-spacing: .25rem;
-				//font-weight: 600;
+				line-height: 1.55rem;
+				letter-spacing: .5px;
+				word-spacing: .15rem;
+				font-weight: 500;
 
 				@media(max-width: 780px){
 					font-size: 1rem;
