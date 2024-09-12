@@ -207,7 +207,7 @@
 	flex-direction: row;
 	align-items: center;
 	justify-content: space-between;
-	width: 50%;
+	width: 40%;
 	border-radius: 10px;
 	margin-top: 2rem;
 	//background-color: lighten($darkSpringGreen, 2.5%);
@@ -218,6 +218,7 @@
 
 	@media(max-width: 780px){
 		padding: .25rem .75rem;
+		justify-content: space-around;
 	}
 
 	&:hover{
