@@ -17,9 +17,9 @@ function App() {
       <CheckApp />
       {/* <Features /> */}
       <WhyUs />
-      <TryOut /> 
+      {/* <TryOut />  */}
       {/* <Faqs /> */}
-      {/* <Target /> */}
+      <Target />
       {/* <Team /> */}
       {/* <ContactUs /> */}
       <Footer />

@@ -9,6 +9,7 @@ import foodPattern from "../assets/foodPattern.jpg";
 import people from "../assets/icons/people.svg";
 import stall from "../assets/icons/stall.svg";
 import restaurant from "../assets/icons/restaurant-eat.svg";
+import restaurantServe from "../assets/icons/restaurantServe.svg";
 
 //Why KikapuApp / Features
 import inventory from "../assets/icons/inventory.svg";
@@ -56,6 +57,7 @@ export default {
   foodPattern,
   people,
   restaurant,
+  restaurantServe,
   stall,
   linePattern,
   inventory,

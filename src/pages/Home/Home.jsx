@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 import {images} from "../../constants";
 
 export const Home = () => {
-  const [isWaitlist, setIswaitList] = useState(false);
+  const [isWaitlist, setIswaitList] = useState(true);
 
   return (
     // <article className="introArticle">
@@ -92,16 +92,16 @@ export const Home = () => {
             {isWaitlist && (
               <div className="tryApps">
                 <a
-                  href="https://play.google.com/apps/testing/com.eldagenius.kikapustudents"
+                  href="https://play.google.com/store/apps/details?id=com.eldagenius.kikapuvendors&hl=en_US"
                   target="_blank"
                 >
-                  Try the vendors app
+                  Get the vendors app
                 </a>
                 <a
-                  href="https://play.google.com/apps/testing/com.eldagenius.kikapuvendors"
+                  href="https://play.google.com/store/apps/details?id=com.eldagenius.kikapustudents&hl=en_US"
                   target="_blank"
                 >
-                  Try the users app
+                  Get the users app
                 </a>
               </div>
             )}
