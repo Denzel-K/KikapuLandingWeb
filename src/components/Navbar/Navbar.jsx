@@ -14,6 +14,12 @@ export const Navbar = () => {
     headerRef.current.classList.toggle("activeHeader");
   }
 
+  // function closeHeader(){
+  //   setNavActive(!navActive);
+  //   navRef.current.classList.toggle("activeNav");
+  //   headerRef.current.classList.toggle("activeHeader");
+  // }
+
   return (
     <header ref={headerRef}>
       <div className="headLogo">
@@ -39,11 +45,10 @@ export const Navbar = () => {
 
       <nav ref={navRef}>
         <div className="bookmarks">
-          <a hrefLang="#">Home</a>
-          <a href={"#checkApp"}>Features</a>
-          {/* <a href={"#features"}>Features</a> */}
-          <a href={"#about"}>Why us?</a>
-          <a href={"#footer"}>Contact</a>
+          <a hrefLang="#" onClick={handleNavDisplay}>Home</a>
+          <a href={"#checkApp"} onClick={handleNavDisplay}>Features</a>
+          <a href={"#about"} onClick={handleNavDisplay}>Why us?</a>
+          <a href={"#footer"} onClick={handleNavDisplay}>Contact</a>
         </div>
 
         {/* <div className="myDownloadButtons" ref={btnRef}>

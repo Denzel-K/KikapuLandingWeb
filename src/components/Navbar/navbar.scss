@@ -38,7 +38,9 @@ header {
       .logoName {
         //text-shadow: 1px 1px 2px $secondaryColor;
         margin-left: .8rem;
-        color: rgb(36, 225, 109);
+        //color: rgb(36, 225, 109);
+        //color: $darkSpringGreen;
+        color: darken($secondaryColor, 20%);
         font-size: 1.45rem;
   
         @media(max-width: 780px){
@@ -76,7 +78,7 @@ header {
           cursor: pointer;
           border: none;
           outline: none;
-          color: $whiteText;
+          color: rgb(33, 152, 33);
           font-size: 20px;
         }
       }
@@ -107,8 +109,8 @@ header {
         margin: 0 14px 0 0;
         transition: all 0.3s 0.2s;
         border-radius: 5px;
-        //color: $mainColor;
-        color: $whiteText;
+        color: lighten($mainColor, 20%);
+        //color: $whiteText;
         text-decoration: none;
         transition: 0.25s ease;
         font-weight: 600;
@@ -190,8 +192,8 @@ header {
 }
 
 .activeHeader{
-  //background-image: linear-gradient(to bottom, #11273f, #142c46, #18314d, #1b3755, #1f3c5c);
-  // position: fixed;
-  // margin: auto;
+  background-color: rgb(245, 247, 247);
+  position: fixed;
+  margin: auto;
   box-shadow: 0 2px 4px 2px solid rgb(234, 223, 223);
 }

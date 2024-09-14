@@ -32,10 +32,9 @@
   // background-color: hsla(0, 0%, 0%, 0.7);
   //backdrop-filter: blur(2px);
   //background-color: $mainColor;
-  //background-image: linear-gradient(to bottom, #11273f, #4d556b, #878a99, #c2c2cb, #ffffff);
-  background-image: linear-gradient(to bottom, #11273f, #37465e, #5b697e, #828da0, #aab3c3, #bfc6d4, #d5d9e5, #eaedf7, #f0f1f9, #f5f6fb, #fafafd, #ffffff);
-
-  //background-color: rgb(250, 253, 252);
+  //background-image: linear-gradient(to bottom, #11273f, #37465e, #5b697e, #828da0, #aab3c3, #bfc6d4, #d5d9e5, #eaedf7, #f0f1f9, #f5f6fb, #fafafd, #ffffff);
+  background-color: rgb(250, 253, 252);
+  //background-image: linear-gradient(to bottom, #d9f6f8, #e4f7fe, #f0f9ff, #f9fbff, #ffffff);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -50,18 +49,12 @@
 }
 
 .homeContainer {
-  //background-color: $mainColor;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  //padding: 6rem 1rem 3rem 1rem;
   width: 100%;
   height: 100%;
-
-  // @media(max-width: 1040px){
-  //   padding: 6rem 1rem 2rem 1rem;
-  // }
 
   .logoHero{
     width: 100px;
@@ -292,7 +285,10 @@
     }
 
     .title{
-      background-image: linear-gradient(to right top, #181e26, #1c2429, #22292c, #292e2f, #313333);
+      background-image: linear-gradient(to right top, #476958, #427158, #3c7a58, #368256, #308a54, #318955, #328855, #338756, #3b7c59, #43715a, #4b6559, #525956);
+      // background-image: linear-gradient(to right top, #4d7a64, #498769, #44956d, #3ea270, #37b073, #38ad73, #38aa72, #39a772, #42936d, #498067, #4e6c5f, #525956);
+      //background-image: linear-gradient(to right top, #0b8e4d, #23965e, #349d6e, #45a57d, #56ac8c, #58b090, #5ab593, #5cb997, #4fbc91, #43be89, #36c080, #29c276);
+      //background-image: linear-gradient(to right top, #181e26, #1c2429, #22292c, #292e2f, #313333);
       //background-image: linear-gradient(to left bottom, #2e3439, #24292d, #1b1f22, #111418, #01050a);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
@@ -317,14 +313,14 @@
     .desc{
       color: rgb(30, 32, 30);
       opacity: .85;
-      font-size: 1.15rem;
+      font-size: 1rem;
       margin-top: 1.5rem;
       line-height: 1.35rem;
       word-spacing: .25rem;
-      //font-weight: 600;
+      font-family: 'Open Sans', sans-serif;
   
       @media(max-width: 1040px){
-        font-size: 1rem;
+        font-size: 14px;
       }
   
       @media(max-width: 780px){
@@ -375,16 +371,21 @@
         }
       
         a:nth-child(1){
-          background-color: $mainColor;
-          color: $whiteText;
+          // background-color: $mainColor;
+          // color: $whiteText;
+          background-color: $secondaryColor;
+          color: $mainColor;
   
           &:hover {
-            background-color: lighten($mainColor, 20%);
+            //background-color: lighten($mainColor, 20%);
+            background-color: lighten($darkSpringGreen, 15%);
           }
         }
         a:nth-child(2){
-          border: 1.6px solid $mainColor;
-          color: $mainColor;
+          // border: 1.8px solid $mainColor;
+          // color: $mainColor;
+          border: 1.8px solid $darkSpringGreen;
+          color: darken($darkSpringGreen, 20%);
           margin-left: 1.35rem;
 
           @media(max-width: 600px){
@@ -392,7 +393,7 @@
           }
       
           &:hover {
-            background-color: lighten($mainColor, 70%);
+            background-color: lighten($secondaryColor, 35%);
             color: $mainColor;
           }
         }

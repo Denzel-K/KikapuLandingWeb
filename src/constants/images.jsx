@@ -49,6 +49,10 @@ import playStore from '../assets/icons/playStore.svg';
 import appStore from '../assets/icons/appStore.svg';
 import download from '../assets/icons/download.svg';
 
+//WhyPics
+import restaurantStaff from '../assets/restaurantStaff.jpeg';
+import customersTable from '../assets/customers.jpeg';
+
 export default {
   resImg,
   resImg2,
@@ -82,5 +86,7 @@ export default {
   ios,
   playStore,
   appStore,
-  download
+  download,
+  restaurantStaff,
+  customersTable
 }

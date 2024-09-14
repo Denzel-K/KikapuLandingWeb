@@ -5,7 +5,7 @@ import AOS from "aos";
 
 export const CheckApp = () => {
   useEffect(() => {
-		AOS.init({ duration: 1000 });
+		AOS.init({ duration: 1500 });
 	}, []);
 
   return (
@@ -29,7 +29,7 @@ export const CheckApp = () => {
           <span>Seamless</span> User Interaction
         </div>
         <p className="UI-desc">
-          Every touchpoint is intuitive and effortless. From smooth navigation to responsive design, we've crafted an experience where users can easily interact with the app without any friction.
+          From smooth navigation to responsive design, we've crafted an experience where users can easily interact with the app without any friction.
         </p>
       </div>
 

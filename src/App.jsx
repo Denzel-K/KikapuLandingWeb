@@ -19,7 +19,7 @@ function App() {
       <WhyUs />
       {/* <TryOut />  */}
       {/* <Faqs /> */}
-      <Target />
+      {/* <Target /> */}
       {/* <Team /> */}
       {/* <ContactUs /> */}
       <Footer />
