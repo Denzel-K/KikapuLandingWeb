@@ -5,7 +5,7 @@ import AOS from "aos";
 
 export const CheckApp = () => {
   useEffect(() => {
-		AOS.init({ duration: 1500 });
+		AOS.init();
 	}, []);
 
   return (
@@ -33,7 +33,7 @@ export const CheckApp = () => {
         </p>
       </div>
 
-      <section className="appFeature" data-aos='fade-up'>
+      <section className="appFeature" data-aos='fade-up' data-aos-duration='1200'>
         <div className="featureShot">
           <img src={images.dashboard} alt="dashboard" />
         </div>
@@ -51,7 +51,7 @@ export const CheckApp = () => {
         </div>
       </section>
 
-      <section className="appFeature" data-aos='fade-up'>
+      <section className="appFeature" data-aos='fade-up' data-aos-duration='1200'>
         <div className="featureShot">
           <img src={images.cart} alt="dashboard" />
         </div>
@@ -68,7 +68,7 @@ export const CheckApp = () => {
         </div>
       </section>
 
-      <section className="appFeature" data-aos='fade-up'>
+      <section className="appFeature" data-aos='fade-up' data-aos-duration='1200'>
         <div className="featureShot">
           <img src={images.orderDraft} alt="dashboard" />
         </div>
@@ -86,7 +86,7 @@ export const CheckApp = () => {
         </div>
       </section>
 
-      <section className="appFeature" data-aos='fade-up'>
+      <section className="appFeature" data-aos='fade-up' data-aos-duration='1200'>
         <div className="featureShot">
           <img src={images.history} alt="history" />
         </div>

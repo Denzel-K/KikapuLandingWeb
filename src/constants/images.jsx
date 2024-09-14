@@ -16,8 +16,14 @@ import restaurantServe from "../assets/icons/restaurantServe.svg";
 // import POS from "../assets/icons/POS.svg";
 // import analytics from "../assets/icons/analytics.svg";
 // import credit from "../assets/icons/credit.svg";
-// import orderReservation from "../assets/icons/orderReservation.svg";
-// import paymentOptions from "../assets/icons/paymentOptions.svg";
+import orderReservation from "../assets/icons/orderReservation.svg";
+import paymentOptions from "../assets/icons/paymentOptions.svg";
+import eMenu from "../assets/icons/eMenu.svg";
+import insight from "../assets/icons/insight.svg";
+import loyalty from "../assets/icons/loyalty.svg";
+import revenueBoost from "../assets/icons/revenueBoost.svg";
+import visibility from "../assets/icons/visibility.svg";
+import tableService from "../assets/icons/tableService.svg";
 
 //In partnership with
 import msStartup from "../assets/msRocket.png";
@@ -78,5 +84,13 @@ export default {
   appStore,
   download,
   restaurantStaff,
-  customersTable
+  customersTable,
+  orderReservation,
+  paymentOptions,
+  eMenu,
+  insight,
+  loyalty,
+  revenueBoost,
+  visibility,
+  tableService
 }

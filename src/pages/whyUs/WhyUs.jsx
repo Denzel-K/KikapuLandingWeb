@@ -4,7 +4,7 @@ import AOS from "aos";
 
 export const WhyUs = () => {
   useEffect(() => {
-		AOS.init({ duration: 1000 });
+		AOS.init({ duration: 1000, offset: 200 });
 	}, []);
   
   const reasons = [
@@ -56,21 +56,25 @@ export const WhyUs = () => {
     {
       id: "1",
       title: "Effortless Reservations",
+      image: images.orderReservation,
       description: "Secure your table at your favorite restaurants with just a few taps on your device. No more waiting on hold—simply choose your desired time and party size, and we'll handle the rest."
     },
     {
       id: "2",
-      title: "Digital Interactive E-menus",
+      title: "Interactive E-menus",
+      image: images.eMenu,
       description: "Browse through detailed and interactive digital menus before you even set foot in the restaurant. Customize your order to your liking and place it directly from your device for a seamless dining experience."
     },
     {
       id: "3",
-      title: "Table Service Made Easy",
+      title: "Effective Table Service",
+      image: images.tableService,
       description: "Enjoy a smooth dining experience with seamless table service and efficient order processing. Your orders are sent directly to the kitchen, ensuring that your meal arrives without delays."
     },
     {
       id: "4",
-      title: "Secure and Seamless Payments",
+      title: "Secure Payments",
+      image: images.paymentOptions,
       description: "Pay for your meals with confidence, knowing that your payment information is protected. Choose from a variety of secure payment methods, including credit cards, digital wallets, and more."
     }
   ];
@@ -79,21 +83,25 @@ export const WhyUs = () => {
     {
       id: "1",
       title: "Boost Revenue",
+      image: images.revenueBoost,
       description: "Increase your restaurant's sales and profitability with KIKAPU's powerful marketing tools. Attract more customers and keep them coming back with targeted promotions and featured listings."
     },
     {
       id: "2",
       title: "Increased Visibility",
+      image: images.visibility,
       description: "Expand your reach and attract new customers by showcasing your restaurant on KIKAPU's platform. Gain access to a wider audience, including diners who might not have discovered you otherwise."
     },
     {
       id: "3",
       title: "Data-Driven Insights",
+      image: images.insight,
       description: "Harness the power of data to gain valuable insights into your customers' preferences and behavior. Use these insights to refine your menu, optimize pricing, and enhance the overall dining experience."
     },
     {
       id: "4",
-      title: "Loyalty Program Integration",
+      title: "Loyal Customer base",
+      image: images.loyalty,
       description: "Encourage repeat visits and build a loyal customer base by integrating a customizable loyalty program into your offerings. Reward  customers with discounts and exclusive perks that keep them coming back."
     }
   ];
@@ -106,14 +114,14 @@ export const WhyUs = () => {
 			</div>
 
       <div className="reasons_container">
-        <div className="customerCont f_box">
+        <div className="customerCont f_box" data-aos='fade-up'>
           <div className="featureHead">
             <span>Customers</span>
             <img src={images.customers} alt="customers" className="cusImg" />
           </div>
 
           <div className="whySpecs">
-            <div className="getTheApp" data-aos='fade-up'>
+            <div className="getTheApp">
               <div className="getAppPic">
                 <img src={images.customersTable} alt="customersTable" />
               </div>
@@ -138,7 +146,10 @@ export const WhyUs = () => {
 
               {customers.map ((item, id) => (
                 <div className="cusItem featureItem" key={id}>
-                  <div className="cusTitle f_title">{item.title}</div>
+                  <div className="reasonTitle">
+                    <div className="whyText">{item.title}</div>
+                      <img src={item.image} alt="whyIcon" className="whyIcon" />
+                  </div>
                   <div className="f_desc">{item.description}</div>
                 </div>
               ))}
@@ -146,26 +157,14 @@ export const WhyUs = () => {
           </div>
         </div>
 
-        <div className="resCont f_box">
+        <div className="resCont f_box" data-aos='fade-up'>
           <div className="featureHead">
             <span>Restaurants</span>
             <img src={images.restHead} alt="restaurant" />
           </div>
 
           <div className="whySpecs">
-            <div className="f_grid">
-              <div className="f_grid_title">
-                Benefits
-              </div>
-              {restaurants.map ((item, id) => (
-                <div className="resItem featureItem" key={id}>
-                  <div className="resTitle f_title">{item.title}</div>
-                  <div className="f_desc">{item.description}</div>
-                </div>
-              ))}
-            </div>
-
-            <div className="getTheApp" data-aos='fade-up'>
+            <div className="getTheApp">
               <div className="getAppPic">
                 <img src={images.restaurantStaff} alt="customersTable" />
               </div>
@@ -182,6 +181,21 @@ export const WhyUs = () => {
                 </a>
               </div>
             </div>  
+
+            <div className="f_grid">
+              <div className="f_grid_title">
+                Benefits
+              </div>
+              {restaurants.map ((item, id) => (
+                <div className="resItem featureItem" key={id}>
+                  <div className="reasonTitle">
+                    <div className="whyText">{item.title}</div>
+                      <img src={item.image} alt="whyIcon" className="whyIcon" />
+                  </div>
+                  <div className="f_desc">{item.description}</div>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </div>

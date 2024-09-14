@@ -258,23 +258,50 @@
 					background-color: lighten($mainColor, 10%);
 					border-radius: 12px;
 		
-					.f_title{
-						font-size: 1.25rem;
-						font-weight: 700;
-						color: $aquaMarine;
-	
-						@media(max-width: 1040px){
-							font-size: 1.15rem;
+					.reasonTitle{
+						display: flex;
+						flex-direction: row;
+						align-items: center;
+						justify-content: space-between;
+						width: 100%;
+				
+						.whyIcon {
+							width: 32px;
+			
+							@media(max-width: 1040px){
+								width: 28px;
+							}
+							@media(max-width: 780px){
+								width: 28px;
+							}
+							@media(max-width: 600px){
+								width: 24px;
+							}
 						}
-						@media(max-width: 600px){
-							font-size: 1rem;
+			
+						.whyText {
+							font-weight: 600;
+							font-size: 1.35rem;
+							color: lighten($aquaMarine, 15%);
+							text-align: left;
+			
+							@media(max-width: 1040px){
+								font-size: 1.15rem;
+							}
+							@media(max-width: 780px){
+								font-size: 1.05rem;
+							}
+							@media(max-width: 600px){
+								font-size: 1rem;
+							}
 						}
 					}
+
 					.f_desc{
 						font-size: 14px;
 						color: $lightBg;
 						opacity: .8;
-						margin-top: 1rem;
+						margin-top: 1.45rem;
 						line-height: 1.25rem;
 	
 						@media(max-width: 1040px){
@@ -424,6 +451,17 @@
 	}
 
 	.customerCont{
+		.featureItem:nth-child(3){
+			.reasonTitle .whyIcon{
+				scale: 0.9;
+			}
+		}
+		.featureItem:nth-child(4){
+			.reasonTitle .whyIcon{
+				scale: 1.2;
+			}
+		}
+
 		.whySpecs{
 			display: grid;
 			grid-template-columns: 1fr 2fr;
@@ -445,11 +483,17 @@
 	}
 
 	.resCont{
-		margin-top: 1.25rem;
+		margin-top: 1.65rem;
+
+		.featureItem:nth-child(2), .featureItem:nth-child(5){
+			.reasonTitle .whyIcon{
+				scale: 1.15;
+			}
+		}
 
 		.whySpecs{
 			display: grid;
-			grid-template-columns: 2fr 1fr;
+			grid-template-columns: 1fr 2fr;
 			gap: 1.5rem;
 
 			@media(max-width: 1040px){
@@ -460,7 +504,7 @@
 			}
 			@media(max-width: 600px){
 				display: flex;
-				flex-direction: column-reverse;
+				flex-direction: column;
 				align-items: center;
 				justify-content: center;
 			}
