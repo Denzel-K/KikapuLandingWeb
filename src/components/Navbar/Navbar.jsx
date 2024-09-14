@@ -50,10 +50,6 @@ export const Navbar = () => {
           <a href={"#about"} onClick={handleNavDisplay}>Why us?</a>
           <a href={"#footer"} onClick={handleNavDisplay}>Contact</a>
         </div>
-
-        {/* <div className="myDownloadButtons" ref={btnRef}>
-          <button className="downloadButton">Join waitlist</button>
-        </div> */}
       </nav>
     </header>
   );

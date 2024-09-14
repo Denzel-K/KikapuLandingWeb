@@ -9,7 +9,7 @@ export const CheckApp = () => {
 	}, []);
 
   return (
-    <div className="checkAppContainer" id="checkApp">
+    <div className="checkAppContainer">
       <div className="everyoneBox">
         <div className="everyoneTitle secTitle">
           <span>Kikapu</span> for Everyone
@@ -24,7 +24,7 @@ export const CheckApp = () => {
         </div>
       </div>
 
-      <div className="checkHead">
+      <div className="checkHead" id="checkApp">
         <div className="checkAppTitle secTitle">
           <span>Seamless</span> User Interaction
         </div>

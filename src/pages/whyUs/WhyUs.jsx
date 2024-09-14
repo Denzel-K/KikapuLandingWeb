@@ -105,21 +105,6 @@ export const WhyUs = () => {
 				<span style={{ color: "#E8F0F0" }}>Why</span> KikapuApp?
 			</div>
 
-      {/* <div className="reasons-container">
-        {reasons.map((reason, id) => (
-          <div className="reason" key={id} data-aos="fade-left">
-            <div className="reasonTitle">
-              <div className="whyText">{reason.title}</div>
-              <img src={reason.image} alt='Icon' className='whyIcon' />
-            </div>
-
-            <p className="reasonDesc">
-              {reason.description}
-            </p>
-          </div>
-        ))}
-      </div> */}
-
       <div className="reasons_container">
         <div className="customerCont f_box">
           <div className="featureHead">

@@ -1,7 +1,6 @@
 import { useEffect } from "react";
 import { images } from "../../constants";
 import AOS from "aos";
-import { Link } from "react-router-dom";
 
 export const Target = () => {
 	const targetList = [
@@ -12,13 +11,6 @@ export const Target = () => {
 			desc: "Secure your table at your favorite restaurants with just a few taps on your device.",
 			link: 'https://play.google.com/store/apps/details?id=com.eldagenius.kikapustudents&hl=en_US'
 		},
-		// {
-		// 	id: "2",
-		// 	icon: images.stall,
-		// 	title: "Vendors",
-		// 	class: "marketPlace",
-		// 	desc: "Partner with KikapuApp & Redefine the ordering processes for customers.",
-		// },
 		{
 			id: "2",
 			icon: images.restaurantServe,
@@ -39,7 +31,6 @@ export const Target = () => {
 			</div>
 			<div className='TargetsContainer'>
 				<div className='targetHeading'>
-					{/* <span style={{ color: "#101127" }}>Who Is</span> KikapuApp For? */}
 					Get the App
 				</div>
 

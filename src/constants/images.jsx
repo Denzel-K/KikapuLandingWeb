@@ -12,15 +12,12 @@ import restaurant from "../assets/icons/restaurant-eat.svg";
 import restaurantServe from "../assets/icons/restaurantServe.svg";
 
 //Why KikapuApp / Features
-import inventory from "../assets/icons/inventory.svg";
-import POS from "../assets/icons/POS.svg";
-import analytics from "../assets/icons/analytics.svg";
-import credit from "../assets/icons/credit.svg";
-import orderReservation from "../assets/icons/orderReservation.svg";
-import paymentOptions from "../assets/icons/paymentOptions.svg";
-
-//teamBg
-import linePattern from "../assets/linePattern.jpg";
+// import inventory from "../assets/icons/inventory.svg";
+// import POS from "../assets/icons/POS.svg";
+// import analytics from "../assets/icons/analytics.svg";
+// import credit from "../assets/icons/credit.svg";
+// import orderReservation from "../assets/icons/orderReservation.svg";
+// import paymentOptions from "../assets/icons/paymentOptions.svg";
 
 //In partnership with
 import msStartup from "../assets/msRocket.png";
@@ -63,13 +60,6 @@ export default {
   restaurant,
   restaurantServe,
   stall,
-  linePattern,
-  inventory,
-  POS,
-  analytics,
-  credit,
-  orderReservation,
-  paymentOptions,
   msStartup,
   customers,
   restHead,

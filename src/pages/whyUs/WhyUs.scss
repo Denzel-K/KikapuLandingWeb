@@ -46,6 +46,7 @@
 	}
 }
 
+/*
 .reasons-container {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
@@ -139,6 +140,7 @@
 		}
 	}
 }
+*/
 
 .reasons_container{
 	display: flex;
@@ -200,23 +202,6 @@
 		}
 
 		.whySpecs{
-			// display: grid;
-			// grid-template-columns: 2fr 1fr;
-			// gap: 1.5rem;
-
-			// @media(max-width: 1040px){
-			// 	gap: 1rem;
-			// }
-			// @media(max-width: 780px){
-			// 	grid-template-columns: 1fr 1fr;
-			// }
-			// @media(max-width: 600px){
-			// 	display: flex;
-			// 	flex-direction: column-reverse;
-			// 	align-items: center;
-			// 	justify-content: center;
-			// }
-
 			.f_grid{
 				display: grid;
 				grid-template-columns: 1fr 1fr;
